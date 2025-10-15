@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background: #f2f5f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+  }
+  
+  .container {
+    margin-top: 40px;
+    width: 90%;
+    max-width: 600px;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .task-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .task-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  
+  .task-input button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .task-input button:hover {
+    background: #0056b3;
+  }
+  
+  .task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .task {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .task.completed .title {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  .task .details {
+    flex: 1;
+  }
+  
+  .task .title {
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  
+  .task .desc {
+    font-size: 13px;
+    color: #555;
+  }
+  
+  .task button {
+    border: none;
+    cursor: pointer;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    margin-left: 5px;
+  }
+  
+  .edit-btn {
+    background: #ffc107;
+    color: #333;
+  }
+  
+  .delete-btn {
+    background: #dc3545;
+    color: white;
+  }
+  
+  .complete-btn {
+    background: #28a745;
+    color: white;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
